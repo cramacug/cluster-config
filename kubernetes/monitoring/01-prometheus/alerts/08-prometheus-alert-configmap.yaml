@@ -8,7 +8,7 @@ data:
     global:
       resolve_timeout: 5m
       slack_api_url: 'https://hooks.slack.com/services/REEMPLAZAR-CON-URL-DEL-WEBHOOK'
-  
+    
     route:
       group_by: ['alertname', 'cluster', 'service']
       group_wait: 30s
@@ -23,7 +23,7 @@ data:
       - match: 
           severity: warning
         receiver: default-receiver
-
+    
     receivers:
     - name: default-receiver
       slack_configs:

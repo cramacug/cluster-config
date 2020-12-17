@@ -4,10 +4,10 @@ metadata:
   name: prometheus-service
   namespace: monitoring
 spec:
-  selector: 
+  selector:
     app: prometheus-server
   type: NodePort
   ports:
     - port: 8080
-      targetPort: 9090 
+      targetPort: 9090
       nodePort: 30000
