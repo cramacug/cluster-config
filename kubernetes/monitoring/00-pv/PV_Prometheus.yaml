@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: prometheus-pv-20gi
+spec:
+  storageClassName: storage-nfs
+  capacity:
+    storage: 20Gi
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    server: 192.168.1.96
+    path: "/volume1/cluster/prometheus"
+
