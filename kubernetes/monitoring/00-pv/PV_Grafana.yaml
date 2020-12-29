@@ -9,6 +9,6 @@ spec:
   accessModes:
     - ReadWriteMany
   nfs:
-    server: 192.168.1.96
+    server: 192.168.1.39
     path: "/volume1/cluster/grafana"
 
